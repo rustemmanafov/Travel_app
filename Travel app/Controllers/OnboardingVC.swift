@@ -17,9 +17,20 @@ class OnboardingVC: MainVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+                
+        signInButton.buttonCallback = {
+           
+        }
+        
+        signUpButton.buttonCallback = {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpVC
+            
+            self.show(vc, sender: nil)
+        }
         
         
     }
+    
 
     
 

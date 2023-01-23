@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		46264C6F29792999002F744B /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46264C6E29792999002F744B /* AlertViewController.swift */; };
+		464789AF297E48C80094116A /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464789AE297E48C80094116A /* SignUpVC.swift */; };
+		4694B2A62979C9EB002E45A6 /* CustomButton_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694B2A52979C9EB002E45A6 /* CustomButton_2.swift */; };
 		469577902977C664008B8FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695778F2977C664008B8FEA /* AppDelegate.swift */; };
 		469577922977C664008B8FEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469577912977C664008B8FEA /* SceneDelegate.swift */; };
 		469577942977C664008B8FEA /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469577932977C664008B8FEA /* OnboardingVC.swift */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		46264C6E29792999002F744B /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		464789AE297E48C80094116A /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		4694B2A52979C9EB002E45A6 /* CustomButton_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton_2.swift; sourceTree = "<group>"; };
 		4695778C2977C664008B8FEA /* Travel app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4695778F2977C664008B8FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469577912977C664008B8FEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				469577932977C664008B8FEA /* OnboardingVC.swift */,
+				464789AE297E48C80094116A /* SignUpVC.swift */,
 				46264C6E29792999002F744B /* AlertViewController.swift */,
 			);
 			path = Controllers;
@@ -98,6 +103,7 @@
 			children = (
 				469577A82977CB9A008B8FEA /* CustomButton.swift */,
 				469577AB2977D5F1008B8FEA /* CustomAlert.swift */,
+				4694B2A52979C9EB002E45A6 /* CustomButton_2.swift */,
 			);
 			path = Extention_Helper;
 			sourceTree = "<group>";
@@ -184,11 +190,13 @@
 			files = (
 				469577942977C664008B8FEA /* OnboardingVC.swift in Sources */,
 				46264C6F29792999002F744B /* AlertViewController.swift in Sources */,
+				464789AF297E48C80094116A /* SignUpVC.swift in Sources */,
 				469577A42977C725008B8FEA /* MainVC.swift in Sources */,
 				469577902977C664008B8FEA /* AppDelegate.swift in Sources */,
 				469577A92977CB9A008B8FEA /* CustomButton.swift in Sources */,
 				469577AC2977D5F1008B8FEA /* CustomAlert.swift in Sources */,
 				469577922977C664008B8FEA /* SceneDelegate.swift in Sources */,
+				4694B2A62979C9EB002E45A6 /* CustomButton_2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

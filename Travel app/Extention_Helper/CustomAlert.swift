@@ -12,6 +12,7 @@ class AlertView: UIView {
     
     private var bgView: UIView!
     private var parentView: UIView!
+    private var bigCircleView: UIView!
     private var circleView: UIView!
     private var imageView: UIImageView!
     private var titleLabel: UILabel!
@@ -22,6 +23,7 @@ class AlertView: UIView {
         
         setupBgView()
         setupParentView()
+        setupBigCircleView()
         setupCircleView()
         setupImage()
         setupTitle()
@@ -42,7 +44,7 @@ class AlertView: UIView {
         NSLayoutConstraint(item: bgView!, attribute: .centerX, relatedBy: .equal, toItem: self, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: bgView!, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: bgView!, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1, constant: 280).isActive = true
-        NSLayoutConstraint(item: bgView!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 220).isActive = true
+        NSLayoutConstraint(item: bgView!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 240).isActive = true
     }
     
     private func setupParentView() {
@@ -64,8 +66,28 @@ class AlertView: UIView {
         NSLayoutConstraint(item: parentView!, attribute: .centerX, relatedBy: .equal, toItem: bgView, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: parentView!, attribute: .bottom, relatedBy: .equal, toItem: bgView, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: parentView!, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1, constant: 280).isActive = true
-        NSLayoutConstraint(item: parentView!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 190).isActive = true
+        NSLayoutConstraint(item: parentView!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 210).isActive = true
     }
+    
+    private func setupBigCircleView() {
+        
+        bigCircleView = UIView()
+        
+        bigCircleView.backgroundColor = .white
+        bigCircleView.layer.cornerRadius = 35
+        bigCircleView.layer.borderWidth = 0
+
+
+        
+        parentView.addSubview(bigCircleView)
+        bigCircleView.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint(item: bigCircleView!, attribute: .centerX, relatedBy: .equal, toItem: parentView, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: bigCircleView!, attribute: .centerY, relatedBy: .equal, toItem: parentView, attribute: .centerY, multiplier: 1, constant: -95).isActive = true
+        NSLayoutConstraint(item: bigCircleView!, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1, constant: 70).isActive = true
+        NSLayoutConstraint(item: bigCircleView!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 70).isActive = true
+    }
+    
     
     private func setupCircleView() {
         
@@ -74,15 +96,11 @@ class AlertView: UIView {
         circleView.backgroundColor = .white
         circleView.layer.cornerRadius = 30
         
-//        circleView.layer.borderWidth = 35
-//        circleView.layer.borderColor = UIColor.blue.cgColor
-        
-        
-        parentView.addSubview(circleView)
+        bigCircleView.addSubview(circleView)
         circleView.translatesAutoresizingMaskIntoConstraints = false
         
-        NSLayoutConstraint(item: circleView!, attribute: .centerX, relatedBy: .equal, toItem: parentView, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
-        NSLayoutConstraint(item: circleView!, attribute: .centerY, relatedBy: .equal, toItem: parentView, attribute: .centerY, multiplier: 1, constant: -95).isActive = true
+        NSLayoutConstraint(item: circleView!, attribute: .centerX, relatedBy: .equal, toItem: bigCircleView, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
+        NSLayoutConstraint(item: circleView!, attribute: .centerY, relatedBy: .equal, toItem: bigCircleView, attribute: .centerY, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: circleView!, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1, constant: 60).isActive = true
         NSLayoutConstraint(item: circleView!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 60).isActive = true
     }
@@ -90,7 +108,6 @@ class AlertView: UIView {
     private func setupImage() {
         
         imageView = UIImageView()
-        
         circleView.addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.image = UIImage(named: "success")
