@@ -76,8 +76,8 @@ class AlertView: UIView {
         bigCircleView.backgroundColor = .white
         bigCircleView.layer.cornerRadius = 35
         bigCircleView.layer.borderWidth = 0
-
-
+        
+        
         
         parentView.addSubview(bigCircleView)
         bigCircleView.translatesAutoresizingMaskIntoConstraints = false
@@ -130,7 +130,7 @@ class AlertView: UIView {
         
         parentView.addSubview(titleLabel)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-
+        
         NSLayoutConstraint(item: titleLabel!, attribute: .centerX, relatedBy: .equal, toItem: parentView, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: titleLabel!, attribute: .centerY, relatedBy: .equal, toItem: parentView, attribute: .centerY, multiplier: 1, constant: -40).isActive = true
         NSLayoutConstraint(item: titleLabel!, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1, constant: 130).isActive = true
@@ -149,7 +149,7 @@ class AlertView: UIView {
         
         parentView.addSubview(descriptionLabel)
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
-
+        
         NSLayoutConstraint(item: descriptionLabel!, attribute: .centerX, relatedBy: .equal, toItem: parentView, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: descriptionLabel!, attribute: .centerY, relatedBy: .equal, toItem: parentView, attribute: .centerY, multiplier: 1, constant: 7).isActive = true
         NSLayoutConstraint(item: descriptionLabel!, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .width, multiplier: 1, constant: 220).isActive = true
@@ -170,10 +170,10 @@ class AlertView: UIView {
         NSLayoutConstraint(item: button!, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .height, multiplier: 1, constant: 50).isActive = true
     }
     
-     func addOverlayView() {
+    func addOverlayView() {
         let overlayView = UIView()
         let targetMaskLayer = CAShapeLayer()
-
+        
         addSubview(overlayView)
         overlayView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -181,21 +181,21 @@ class AlertView: UIView {
         NSLayoutConstraint(item: overlayView, attribute: .centerY, relatedBy: .equal, toItem: circleView, attribute: .centerY, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: overlayView, attribute: .width, relatedBy: .equal, toItem: circleView, attribute: .width, multiplier: 1, constant: 25).isActive = true
         NSLayoutConstraint(item: overlayView, attribute: .height, relatedBy: .equal, toItem: overlayView, attribute: .width, multiplier: 1, constant: 0).isActive = true
-
-         overlayView.frame = CGRect(x: circleView.frame.minX, y: circleView.frame.minY, width: circleView.frame.width + 5, height: circleView.frame.width + 5)
-         
+        
+        overlayView.frame = CGRect(x: circleView.frame.minX, y: circleView.frame.minY, width: circleView.frame.width + 5, height: circleView.frame.width + 5)
+        
         let path = UIBezierPath(rect: overlayView.frame)
         print(overlayView.frame)
-
+        
         targetMaskLayer.path = path.cgPath
         // Exclude intersected paths
         targetMaskLayer.fillRule = CAShapeLayerFillRule.evenOdd
-
+        
         overlayView.layer.mask = targetMaskLayer
         overlayView.clipsToBounds = true
         overlayView.alpha = 0.6
         overlayView.backgroundColor = UIColor.black
-
+        
     }
     
 }

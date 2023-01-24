@@ -2,36 +2,33 @@
 //  SignInVC.swift
 //  Travel app
 //
-//  Created by Rustem Manafov on 23.01.23.
+//  Created by Rustem Manafov on 24.01.23.
 //
 
 import UIKit
 
-class SignUpVC: MainVC {
+class SignInVC: MainVC {
 
-    @IBOutlet weak var fullNameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var signInButton: CustomButton!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var signUpButton: CustomButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationController?.navigationBar.tintColor = .white
         
-        fullNameTextField.addRightView(image: UIImage(systemName: "person") ?? UIImage())
-        emailTextField.addRightView(image: UIImage(systemName: "envelope") ?? UIImage())
+        nameTextField.addRightView(image: UIImage(systemName: "person") ?? UIImage())
         passwordTextField.addRightView(image: UIImage(systemName: "eye") ?? UIImage(), isSecure: true)
         passwordTextField.isSecureTextEntry = true
-        
-        signUpButton.buttonCallback = {
+
+        signInButton.buttonCallback = {
             print("hello")
         }
-
+        
     }
     
 
-    
-   
 
 }
+ 
