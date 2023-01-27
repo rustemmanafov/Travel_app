@@ -21,12 +21,22 @@ class CustomView: UIView {
     }
     
     func setRadiusAndShadow() {
-        layer.cornerRadius = 5
+        layer.cornerRadius = 8
         clipsToBounds = true
         layer.masksToBounds = false
         layer.shadowRadius = 5
         layer.shadowOpacity = 0.5
-        layer.shadowOffset = CGSize(width: 3, height: 0)
+        layer.shadowOffset = CGSize(width: 3, height: 3)
         layer.shadowColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+    }
+}
+
+extension UIView {
+    func designView(borderWidth: CGFloat = 1, borderColor: UIColor = #colorLiteral(red: 0, green: 0.46, blue: 0.89, alpha: 1)) {
+        
+        layer.cornerRadius = frame.height/2
+        clipsToBounds = true
+        layer.borderWidth = borderWidth
+        layer.borderColor = borderColor.cgColor
     }
 }

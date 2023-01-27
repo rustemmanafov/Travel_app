@@ -20,12 +20,18 @@ class OnboardingVC: MainVC {
                 
         signInButton.buttonCallback = {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignInVC") as! SignInVC
-            self.show(vc, sender: nil)
+            DispatchQueue.main.async {
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+           
         }
         
         signUpButton.buttonCallback = {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "SignUpVC") as! SignUpVC
-            self.show(vc, sender: nil)
+            DispatchQueue.main.async {
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+          
         }
         
         let attributedString = NSMutableAttributedString.init(string: appNameLabel.text ?? "")
@@ -35,11 +41,6 @@ class OnboardingVC: MainVC {
         attributedString.addAttributes([NSAttributedString.Key.foregroundColor: UIColor(red: 0.58, green: 0.31, blue: 0.60, alpha: 1.00)], range: range2)
         appNameLabel.attributedText = attributedString
         appNameLabel.attributedText = attributedString
-        
     }
-    
-
-    
-
 }
 

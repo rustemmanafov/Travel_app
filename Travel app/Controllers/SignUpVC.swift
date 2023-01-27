@@ -16,8 +16,6 @@ class SignUpVC: MainVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationController?.navigationBar.tintColor = .white
         
         fullNameTextField.addRightView(image: UIImage(systemName: "person") ?? UIImage())
         emailTextField.addRightView(image: UIImage(systemName: "envelope") ?? UIImage())

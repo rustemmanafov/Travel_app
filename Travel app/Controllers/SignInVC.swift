@@ -15,20 +15,17 @@ class SignInVC: MainVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationController?.navigationBar.tintColor = .white
         
         nameTextField.addRightView(image: UIImage(systemName: "person") ?? UIImage())
         passwordTextField.addRightView(image: UIImage(systemName: "eye") ?? UIImage(), isSecure: true)
         passwordTextField.isSecureTextEntry = true
 
         signInButton.buttonCallback = {
-            print("hello")
+            UserDefaults.standard.set(true, forKey: "isLoggedIn")
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "TabBarVC") as! TabBarVC
+            vc.modalPresentationStyle = .fullScreen
+            self.present(vc, animated: true)
         }
-        
     }
-    
-
-
 }
  

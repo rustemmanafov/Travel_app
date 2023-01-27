@@ -7,14 +7,13 @@
 
 import UIKit
 
-class AlertViewController: MainVC {
+class AlertVC: MainVC {
 
     @IBOutlet weak var alertView: AlertView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,7 +24,5 @@ class AlertViewController: MainVC {
         super.viewDidAppear(animated)
         //alertView.addOverlayView()
     }
-
-  
 
 }

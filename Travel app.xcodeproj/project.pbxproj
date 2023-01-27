@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		46264C6F29792999002F744B /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46264C6E29792999002F744B /* AlertViewController.swift */; };
+		46264C6F29792999002F744B /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46264C6E29792999002F744B /* AlertVC.swift */; };
 		46459C9D297E733B00128706 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46459C9C297E733B00128706 /* CustomView.swift */; };
 		46459C9F297E9EE000128706 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46459C9E297E9EE000128706 /* CustomTextField.swift */; };
 		46459CA1297FA7DE00128706 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46459CA0297FA7DE00128706 /* SignInVC.swift */; };
+		46459CA3297FE5F200128706 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46459CA2297FE5F200128706 /* HomeVC.swift */; };
+		46459CA5297FE60300128706 /* ToursVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46459CA4297FE60300128706 /* ToursVC.swift */; };
+		46459CA7297FE61400128706 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46459CA6297FE61400128706 /* ProfileVC.swift */; };
+		46459CA9297FE62800128706 /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46459CA8297FE62800128706 /* ExploreVC.swift */; };
 		464789AF297E48C80094116A /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464789AE297E48C80094116A /* SignUpVC.swift */; };
 		4694B2A62979C9EB002E45A6 /* CustomButton_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694B2A52979C9EB002E45A6 /* CustomButton_2.swift */; };
+		4694FC842980FDE9004432E2 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694FC832980FDE9004432E2 /* TabBarVC.swift */; };
+		4694FC862980FFB5004432E2 /* ViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694FC852980FFB5004432E2 /* ViewController+Ext.swift */; };
+		4694FC8829839EC4004432E2 /* TicketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694FC8729839EC4004432E2 /* TicketVC.swift */; };
+		4694FC8A2983A006004432E2 /* DesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4694FC892983A006004432E2 /* DesignButton.swift */; };
 		469577902977C664008B8FEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4695778F2977C664008B8FEA /* AppDelegate.swift */; };
 		469577922977C664008B8FEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469577912977C664008B8FEA /* SceneDelegate.swift */; };
 		469577942977C664008B8FEA /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469577932977C664008B8FEA /* OnboardingVC.swift */; };
@@ -25,12 +33,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		46264C6E29792999002F744B /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		46264C6E29792999002F744B /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
 		46459C9C297E733B00128706 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		46459C9E297E9EE000128706 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		46459CA0297FA7DE00128706 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		46459CA2297FE5F200128706 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		46459CA4297FE60300128706 /* ToursVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToursVC.swift; sourceTree = "<group>"; };
+		46459CA6297FE61400128706 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		46459CA8297FE62800128706 /* ExploreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreVC.swift; sourceTree = "<group>"; };
 		464789AE297E48C80094116A /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		4694B2A52979C9EB002E45A6 /* CustomButton_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton_2.swift; sourceTree = "<group>"; };
+		4694FC832980FDE9004432E2 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		4694FC852980FFB5004432E2 /* ViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Ext.swift"; sourceTree = "<group>"; };
+		4694FC8729839EC4004432E2 /* TicketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketVC.swift; sourceTree = "<group>"; };
+		4694FC892983A006004432E2 /* DesignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignButton.swift; sourceTree = "<group>"; };
 		4695778C2977C664008B8FEA /* Travel app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Travel app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4695778F2977C664008B8FEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469577912977C664008B8FEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,9 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				469577932977C664008B8FEA /* OnboardingVC.swift */,
+				4694FC832980FDE9004432E2 /* TabBarVC.swift */,
 				464789AE297E48C80094116A /* SignUpVC.swift */,
+				46459CA2297FE5F200128706 /* HomeVC.swift */,
+				46459CA4297FE60300128706 /* ToursVC.swift */,
+				46459CA6297FE61400128706 /* ProfileVC.swift */,
+				46459CA8297FE62800128706 /* ExploreVC.swift */,
 				46459CA0297FA7DE00128706 /* SignInVC.swift */,
-				46264C6E29792999002F744B /* AlertViewController.swift */,
+				46264C6E29792999002F744B /* AlertVC.swift */,
+				4694FC8729839EC4004432E2 /* TicketVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -113,6 +135,8 @@
 				4694B2A52979C9EB002E45A6 /* CustomButton_2.swift */,
 				46459C9C297E733B00128706 /* CustomView.swift */,
 				46459C9E297E9EE000128706 /* CustomTextField.swift */,
+				4694FC852980FFB5004432E2 /* ViewController+Ext.swift */,
+				4694FC892983A006004432E2 /* DesignButton.swift */,
 			);
 			path = Extention_Helper;
 			sourceTree = "<group>";
@@ -197,18 +221,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46459CA7297FE61400128706 /* ProfileVC.swift in Sources */,
 				469577942977C664008B8FEA /* OnboardingVC.swift in Sources */,
+				46459CA9297FE62800128706 /* ExploreVC.swift in Sources */,
 				46459C9F297E9EE000128706 /* CustomTextField.swift in Sources */,
 				46459CA1297FA7DE00128706 /* SignInVC.swift in Sources */,
-				46264C6F29792999002F744B /* AlertViewController.swift in Sources */,
+				46264C6F29792999002F744B /* AlertVC.swift in Sources */,
+				46459CA3297FE5F200128706 /* HomeVC.swift in Sources */,
+				4694FC8829839EC4004432E2 /* TicketVC.swift in Sources */,
 				464789AF297E48C80094116A /* SignUpVC.swift in Sources */,
+				4694FC862980FFB5004432E2 /* ViewController+Ext.swift in Sources */,
 				469577A42977C725008B8FEA /* MainVC.swift in Sources */,
 				469577902977C664008B8FEA /* AppDelegate.swift in Sources */,
 				46459C9D297E733B00128706 /* CustomView.swift in Sources */,
 				469577A92977CB9A008B8FEA /* CustomButton.swift in Sources */,
 				469577AC2977D5F1008B8FEA /* CustomAlert.swift in Sources */,
 				469577922977C664008B8FEA /* SceneDelegate.swift in Sources */,
+				4694FC842980FDE9004432E2 /* TabBarVC.swift in Sources */,
+				46459CA5297FE60300128706 /* ToursVC.swift in Sources */,
 				4694B2A62979C9EB002E45A6 /* CustomButton_2.swift in Sources */,
+				4694FC8A2983A006004432E2 /* DesignButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

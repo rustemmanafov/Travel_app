@@ -21,6 +21,8 @@ class MainVC: UIViewController {
         super.viewDidLoad()
 
         overrideUserInterfaceStyle = .light
+        
+        self.navigationController?.navigationBar.tintColor = .black
     }
     
     override func viewWillAppear(_ animated: Bool) {
