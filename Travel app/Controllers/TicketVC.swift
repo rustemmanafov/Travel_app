@@ -14,6 +14,7 @@ class TicketVC: MainVC {
     @IBOutlet weak var oneWayBtn: UIButton!
     @IBOutlet weak var multiBtn: UIButton!
     @IBOutlet weak var bgView: UIView!
+    @IBOutlet weak var searchFlight: CustomButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +28,11 @@ class TicketVC: MainVC {
         imageView.layer.cornerRadius = 50
         
         changeButtonColor(roundColor: .blue)
+        
+        searchFlight.buttonCallback = {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "FlightResultVC") as! FlightResultVC
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
 
@@ -54,4 +60,15 @@ class TicketVC: MainVC {
         multiBtn.setTitleColor(multiTxtColor, for: .normal)
 
     }
+    
+//    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+//        let translation: CGPoint = scrollView.panGestureRecognizer.translation(in: scrollView.superview)
+//        if translation.y > 0 {
+//            // react to dragging down
+//        }
+//        else {
+//            // react to dragging up
+//            view.endEditing(true)
+//        }
+//    }
 }

@@ -31,4 +31,15 @@ extension UITextField {
         self.isSecureTextEntry = !self.isSecureTextEntry
         sender.isSelected = !sender.isSelected
     }
+    
+    func addLeftView(image: UIImage) {
+        
+        let imageView = UIImageView(frame: CGRect(x: 10, y: 10, width: 30, height: 30))
+        imageView.image = image
+        
+        leftView = imageView
+        leftViewMode = .always
+    }
+    
+        
 }
