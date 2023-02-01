@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		46263B9D2988F26800D9C35A /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46263B9C2988F26800D9C35A /* CalendarVC.swift */; };
 		46263B9F29892CA500D9C35A /* TourTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46263B9E29892CA500D9C35A /* TourTableViewCell.swift */; };
+		46263BA1298A2D4500D9C35A /* CalendarViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46263BA0298A2D4500D9C35A /* CalendarViewCell.swift */; };
+		46263BA3298A2FD500D9C35A /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46263BA2298A2FD500D9C35A /* CalendarHelper.swift */; };
 		46264C6F29792999002F744B /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46264C6E29792999002F744B /* AlertVC.swift */; };
 		46459C9D297E733B00128706 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46459C9C297E733B00128706 /* CustomView.swift */; };
 		46459C9F297E9EE000128706 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46459C9E297E9EE000128706 /* CustomTextField.swift */; };
@@ -42,6 +44,8 @@
 		20CE4869D2DA59EB2CB44659 /* Pods-Travel app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travel app.debug.xcconfig"; path = "Target Support Files/Pods-Travel app/Pods-Travel app.debug.xcconfig"; sourceTree = "<group>"; };
 		46263B9C2988F26800D9C35A /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		46263B9E29892CA500D9C35A /* TourTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourTableViewCell.swift; sourceTree = "<group>"; };
+		46263BA0298A2D4500D9C35A /* CalendarViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewCell.swift; sourceTree = "<group>"; };
+		46263BA2298A2FD500D9C35A /* CalendarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
 		46264C6E29792999002F744B /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
 		46459C9C297E733B00128706 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		46459C9E297E9EE000128706 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 			children = (
 				46570F1C2987C92B0046E54A /* FlightResultVCell.swift */,
 				46263B9E29892CA500D9C35A /* TourTableViewCell.swift */,
+				46263BA0298A2D4500D9C35A /* CalendarViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -164,6 +169,7 @@
 				46459C9E297E9EE000128706 /* CustomTextField.swift */,
 				4694FC852980FFB5004432E2 /* ViewController+Ext.swift */,
 				4694FC892983A006004432E2 /* DesignButton.swift */,
+				46263BA2298A2FD500D9C35A /* CalendarHelper.swift */,
 			);
 			path = Extention_Helper;
 			sourceTree = "<group>";
@@ -313,8 +319,10 @@
 				469577942977C664008B8FEA /* OnboardingVC.swift in Sources */,
 				46459CA9297FE62800128706 /* ExploreVC.swift in Sources */,
 				46570F1D2987C92B0046E54A /* FlightResultVCell.swift in Sources */,
+				46263BA1298A2D4500D9C35A /* CalendarViewCell.swift in Sources */,
 				46459C9F297E9EE000128706 /* CustomTextField.swift in Sources */,
 				46459CA1297FA7DE00128706 /* SignInVC.swift in Sources */,
+				46263BA3298A2FD500D9C35A /* CalendarHelper.swift in Sources */,
 				46264C6F29792999002F744B /* AlertVC.swift in Sources */,
 				46459CA3297FE5F200128706 /* HomeVC.swift in Sources */,
 				4694FC8829839EC4004432E2 /* TicketVC.swift in Sources */,
